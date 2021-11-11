@@ -1,0 +1,7 @@
+.app-wrap {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: auto;
+}

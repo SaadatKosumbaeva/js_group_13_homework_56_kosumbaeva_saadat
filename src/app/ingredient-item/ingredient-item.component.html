@@ -1,0 +1,6 @@
+<div>
+  <button (click)="onAddCount()">Add {{ingredient.name}}</button>
+  <p>{{ingredient.name}}</p>
+  <p>x{{ingredient.amount}}</p>
+  <button (click)="onReduceAmount()" [disabled]=buttonDisable()>Delete</button>
+</div>
