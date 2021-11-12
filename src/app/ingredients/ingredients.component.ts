@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Ingredient} from "../shared/ingredient.module";
 
 @Component({
@@ -7,12 +7,7 @@ import {Ingredient} from "../shared/ingredient.module";
   styleUrls: ['./ingredients.component.css']
 })
 export class IngredientsComponent {
-  ingredients: Ingredient[] = [
-    new Ingredient('Meat', 0, 50),
-    new Ingredient('Cheese', 0, 20),
-    new Ingredient('Salad', 0, 5),
-    new Ingredient('Bacon', 0, 30),
-  ]
+  @Input() ingredients!: Ingredient[];
 
   addCount(index: number) {
     this.ingredients[index].amount++;

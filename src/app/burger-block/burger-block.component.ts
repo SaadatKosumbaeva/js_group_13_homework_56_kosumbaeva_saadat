@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Ingredient} from "../shared/ingredient.module";
 
 @Component({
   selector: 'app-burger-block',
@@ -6,5 +7,5 @@ import {Component} from '@angular/core';
   styleUrls: ['./burger-block.component.css']
 })
 export class BurgerBlockComponent {
-
+  @Input() ingredients!: Ingredient[];
 }
