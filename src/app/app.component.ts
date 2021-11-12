@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Ingredient} from "./shared/ingredient.module";
+import {IngredientsDisplay} from "./shared/ingredient-display.module";
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,9 @@ export class AppComponent {
     new Ingredient('Salad', 0, 5),
     new Ingredient('Bacon', 0, 30),
   ];
+  ingredientsDisplay = new IngredientsDisplay;
+
+  onIngDis(display: IngredientsDisplay) {
+    this.ingredientsDisplay = display;
+  }
 }

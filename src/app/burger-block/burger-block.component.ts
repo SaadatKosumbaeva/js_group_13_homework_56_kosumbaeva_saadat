@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {Ingredient} from "../shared/ingredient.module";
+import {IngredientsDisplay} from "../shared/ingredient-display.module";
 
 @Component({
   selector: 'app-burger-block',
@@ -8,4 +9,7 @@ import {Ingredient} from "../shared/ingredient.module";
 })
 export class BurgerBlockComponent {
   @Input() ingredients!: Ingredient[];
+  @Input() ingDis!: IngredientsDisplay;
+
 }
+

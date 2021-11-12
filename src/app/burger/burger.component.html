@@ -3,9 +3,9 @@
     <div class="Seeds1"></div>
     <div class="Seeds2"></div>
   </div>
-  <div class="Salad"></div>
-  <div class="Cheese"></div>
-  <div class="Meat"></div>
-  <div class="Bacon"></div>
+  <div *ngFor="let item of meatArray()" [ngClass]="classMeat()"></div>
+  <div *ngFor="let item of cheeseArray()" [ngClass]="classCheese()"></div>
+  <div *ngFor="let item of saladArray()" [ngClass]="classSalad()"></div>
+  <div *ngFor="let item of baconArray()" [ngClass]="classBacon()"></div>
   <div class="BreadBottom"></div>
 </div>

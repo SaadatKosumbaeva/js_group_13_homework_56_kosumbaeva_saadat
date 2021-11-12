@@ -13,7 +13,7 @@ import { BurgerBlockComponent } from './burger-block/burger-block.component';
     IngredientsComponent,
     IngredientItemComponent,
     BurgerComponent,
-    BurgerBlockComponent
+    BurgerBlockComponent,
   ],
   imports: [
     BrowserModule

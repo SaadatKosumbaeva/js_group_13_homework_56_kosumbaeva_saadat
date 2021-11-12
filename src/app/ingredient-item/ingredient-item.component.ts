@@ -8,6 +8,7 @@ import {Ingredient} from "../shared/ingredient.module";
 })
 export class IngredientItemComponent {
   @Input() ingredient!: Ingredient;
+  @Input() imageUrl = '';
   @Output() amountAdd = new EventEmitter();
   @Output() amountReduce = new EventEmitter();
   disabled = true;

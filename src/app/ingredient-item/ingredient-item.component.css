@@ -9,3 +9,11 @@ div {
 div > button {
   width: 30%;
 }
+
+.add-btn {
+  padding: 0 3px;
+}
+
+.add-btn > img {
+  display: block;
+}

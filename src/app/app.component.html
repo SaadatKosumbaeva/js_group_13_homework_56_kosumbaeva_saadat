@@ -1,10 +1,10 @@
 <div class="app-wrap">
   <fieldset>
     <legend>Ingredients</legend>
-    <app-ingredients [ingredients]="ingredients"></app-ingredients>
+    <app-ingredients (ingDis)="onIngDis($event)" [ingredients]="ingredients"></app-ingredients>
   </fieldset>
   <fieldset>
     <legend>Burger</legend>
-    <app-burger-block [ingredients]="ingredients"></app-burger-block>
+    <app-burger-block [ingDis]="ingredientsDisplay" [ingredients]="ingredients"></app-burger-block>
   </fieldset>
 </div>
