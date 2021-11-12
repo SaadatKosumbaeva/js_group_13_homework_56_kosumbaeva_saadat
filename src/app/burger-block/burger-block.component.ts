@@ -11,5 +11,12 @@ export class BurgerBlockComponent {
   @Input() ingredients!: Ingredient[];
   @Input() ingDis!: IngredientsDisplay;
 
+  getPrice() {
+    let totalSum = 20;
+    this.ingredients.forEach(ing => {
+      totalSum += ing.getPrice();
+    });
+    return totalSum;
+  }
 }
 
